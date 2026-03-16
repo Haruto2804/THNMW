@@ -404,3 +404,13 @@ button:hover {
 button i {
     margin-right: 5px;
 }
+.product-container {
+    width:70%;
+    padding: 30px;
+    border: 20px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+.product-container p {
+    text-align: left;
+}
