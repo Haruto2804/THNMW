@@ -1,0 +1,13 @@
+
+.big_box h1 {
+    text-align: center;
+}
+.product_list {
+    display: flex;
+}
+.product_item {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    place-items: center;
+}
