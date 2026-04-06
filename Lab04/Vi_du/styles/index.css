@@ -1,0 +1,95 @@
+  /* --- CSS GỐC CỦA BẠN --- */
+  @charset "utf-8";
+  body { background-position: top; background-repeat: repeat-x; margin: 0; font-family: "Rubik", sans-serif; }
+  #container { width: 1000px; margin: 0 auto; }
+  #header { height: 173px; border-radius: 5px; }
+  #logo { float: left; padding-left: 5px; padding-top: 10px; }
+  #logo img { height: 153px; width: 250px; }
+  #banner { width: 500px; float: right; margin-top: 7px; }
+  #banner_logo { float: right; }
+  #menu { height: 50px; }
+  #menu_left_corner { float: left; width: 9px; height: 50px; background-color: #504b4b; border-radius: 50px 0px 0px 50px; }
+  #menu_content { width: 983px; height: 50px; background-color: #504b4b; float: left; }
+  #menu_right_corner { float: left; width: 8px; height: 50px; background-color: #504b4b; border-radius: 0px 50px 50px 0px; }
+  #hmenu { list-style-type: none; margin-left: -20px; margin-top: 0px; }
+  #hmenu li { float: left; margin-left: 20px; margin-right: 20px; line-height: 50px; }
+  #hmenu li a:hover { color: #f4e0ce; }
+  .devider { background-image: url(./images/layout/menu_divider.gif); width: 2px; }
+  #path { height: 15px; }
+  #left { width: 196px; float: left; }
+  #content { width: 588px; float: left; margin-left: 10px; }
+  #right { width: 196px; float: right; }
+  #footer { height: 60px; color: #847676; font-size: 12px; text-align: center; line-height: 20px; font-style: italic; background-image: url(./images/layout/footer_bg.gif); }
+  .categories { list-style-type: none; margin-top: 0px; margin-left: -40px; }
+  .categories li a { text-decoration: none; color: #504b4b; line-height: 30px; display: block; }
+  .title { line-height: 30px; text-align: center; color: #FFF; font-weight: bold; background-color: #504b4b; border-radius: 10px 10px 0 0; margin-top: 10px; }
+  .box_content { height:190px; text-align: center; border: 3px solid #504b4b; padding: 2px; }
+  .center_title { line-height: 33px; color: #847676; font-weight: bold; padding-left: 50px; background: url(./images/layout/bar_bg.gif) no-repeat center; }
+  .center_content { padding: 7px; }
+  .product_box { width: 173px; height: auto; float: left; padding: 9px; }
+  .pro_box_top { height: 12px; background-image: url(./images/layout/product_box_top.gif); }
+  .pro_box_bot { height: 10px; background-image: url(./images/layout/product_box_bottom.gif); }
+  .pro_box_mid { background-image: url(./images/layout/product_box_center.gif); }
+  .pro_title { text-align: center; font-weight: bold; color: #F00; font-size: 14px; }
+  .pro_title a { text-decoration: none; color: #F00; }
+  .oldprice { text-align: center; color: #847676; text-decoration: line-through; width: 50%; float: right; font-size: 14px; }
+  .pro_cart { width: 50%; float: right; font-size: 14px; text-align: center; }
+  .pro_cart a { text-decoration: none; color: #0fa0dd; }
+  .pro_img { text-align: center; padding: 5px 0px; }
+  .pro_img img { height: 100px; }
+  #menu_content a { color: #e8ffff; text-decoration: none; line-height: 50px; display: block; }
+  .lmenu1 { background-color: #dad0d0; padding-left: 5px; margin-bottom: 1px; }
+  .lmenu2 { background-color: #dad0d0; padding-left: 5px; margin-bottom: 1px; }
+  .sach_3-container { text-align: center; }
+  .price2 { text-align:center; color:#F00; width:50%; float:left; font-size:14px; }
+  #banner_logo img { border-radius: 10px; width: 1000px; height: 300px; }
+
+  .clear-both { clear: both; }
+  .text-center { text-align: center; }
+  .hr-promo { color: #6da6b1; }
+  .footer-spacer { clear: both; height: 10px; }
+  .ad-img { width: 190px; }
+  
+  #right .lmenu2 { background-color: #eee6e6; }
+
+  .categories a:hover {
+    font-weight: bold;
+  }
+  .left__search-bar {
+    width:140px;
+    padding: 5px 8px;
+  }
+  .left__search-bar-button {
+    background-color: #504b4b;
+    padding: 5px 8px;
+    height:28px;
+    margin-left: -15px;
+  }
+.right__cart-container {
+    padding: 2px;
+   background-image: url("../images/layout/cart_bg.gif");
+   background-repeat: no-repeat;
+   font-size: 13px;
+}
+
+.right__cart-container p {
+    margin: 0px;
+}
+.cart-flex-container {
+    display: flex;
+    gap: 3px;
+    place-items: center;
+    margin: 0px 20px;
+}
+.p-giohang {
+    text-align: center;
+}
+
+.p-money {
+    color: red;
+}
+.dashed {
+    width: 100%;        
+    border-top: 2px dotted #000;
+    margin: 20px 0;      
+}
