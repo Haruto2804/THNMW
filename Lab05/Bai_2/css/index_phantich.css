@@ -1,0 +1,77 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root {
+    font-family: "Orbitron", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+.left-header {
+    background-color: lightblue;
+    width: 50%;
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    color:white;
+    background-color: blueviolet;
+    width: 50%;
+    text-align: right;
+}
+main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+main div {
+    height:400px;
+
+}
+.main_1 {
+    display: flex;
+    gap: 15px;
+}
+.main_1 aside {
+    width: 300px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+footer {
+    height:300px;
+    background-color: pink;
+}
+.main_1-right {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    background-color: blue;
+    flex: 1;
+}
+.main_2 p {
+    text-align: center;
+}
+.product-item {
+    width:200px;
+    height:300px;
+    background-color: orange;
+}
+.main_2-product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
+}
+.categories-list {
+    background-color: yellow;
+}
