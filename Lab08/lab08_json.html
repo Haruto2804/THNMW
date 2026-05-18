@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lab08_json.css">
+</head>
+<body>
+    <h1>User Information</h1>
+    <div id="container-info">
+        <p id="name">s</p>
+        <p id="age">rf</p>
+        <p id="email">asdasd</p>
+        <p id="address">asds</p>     
+    </div>
+    <script>
+        const nameElement = document.getElementById("name");
+        const ageElement = document.getElementById("age");
+        const emailElement = document.getElementById("email");
+        const addressElement = document.getElementById("address");
+        const userInfo = {
+            name: "Nguyen Van A",
+            age: 30,
+            email: "nguyenvana@stu.edu.vn",
+            address: "Ho Chi Minh, NY 10001"
+        }
+        nameElement.innerHTML = (`
+          <strong>Name: </strong> ${userInfo.name}
+        `)
+        ageElement.innerHTML = (`
+          <strong>Age: </strong> ${userInfo.age}
+        `)
+        emailElement.innerHTML = (`
+          <strong>Email: </strong> ${userInfo.email}
+        `)
+        addressElement.innerHTML = (`
+          <strong>Address: </strong> ${userInfo.address}
+        `)
+
+    </script>
+</body>
+</html>

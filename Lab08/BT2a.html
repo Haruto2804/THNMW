@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tien te</title>
+  </head>
+  <body>
+    <table width="1">
+      <tr>
+        <td>Nhap tien te</td>
+        <td><input type="text" name="" id="amount" /></td>
+        <td>
+          <select id="select-currency">
+            <option value="usd">USD</option>
+            <option value="cny">CNY</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="note-change">1 USD = 22000VND</td>
+        <td>(thay doi khi chon loai tien te khac)</td>
+      </tr>
+      <tr>
+        <td>Thanh tien</td>
+        <td><input type="text" disabled id="kq" /></td>
+        <td>VND</td>
+      </tr>
+    </table>
+    <script>
+      let amountMoneyElement = document.getElementById("amount");
+      const selectElement = document.getElementById("select-currency");
+      const ketQuaElement = document.getElementById("kq");
+      const noteChangeElement = document.getElementById("note-change");
+      const USD_to_VND = 22000;
+      const CNY_to_VND = 3800;
+      function formatCurrencyVND(value) {
+        return new Intl.NumberFormat("vi-VN", {
+          style: "currency",
+          currency: "VND",
+        }).format(value);
+      }
+      function convertMoney() {
+        const amount = Number(amountMoneyElement.value);
+        const selectOption = selectElement.value;
+        let result;
+        if (selectOption === "usd") {
+          result = amount * USD_to_VND;
+          noteChangeElement.textContent = `1 USD = ${USD_to_VND} VND`;
+        } else if (selectOption === "cny") {
+          result = amount * CNY_to_VND;
+          noteChangeElement.textContent = `1 CNY = ${CNY_to_VND} VND`;
+        }
+        ketQuaElement.value = formatCurrencyVND(result);
+      }
+      amountMoneyElement.addEventListener("input", convertMoney);
+      selectElement.addEventListener("change", convertMoney);
+    </script>
+  </body>
+</html>
